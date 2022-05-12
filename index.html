@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<html lang="<?=getlang()?>">
+
+  <head>
+  	<meta charset="utf-8">
+  	<title>My Profile</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<meta name="description" content="" />
+	
+	
+	<!-- javascript ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/redirect.js"></script>
+<script src="js/jquery.redirect.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.textresizer.js"></script>
+<script src="js/custom.js"></script>
+	
+  	<!-- css -->
+  	<link href="css/bootstrap.min.css" rel="stylesheet" />
+  	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  	<link href="css/jcarousel.css" rel="stylesheet" />
+  	<link href="css/flexslider.css" rel="stylesheet" />
+  	<link href="css/style.css" rel="stylesheet" />
+
+  	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  	<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+  </head>
+
+  <body>
+  <script>
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+ 
+  ga("create", "UA-85635326-1", "auto");
+  ga("send", "pageview");
+ 
+</script>
+
+  <div id="fb-root"></div>
+  <script type="text/javascript">
+	(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, "script", "facebook-jssdk"));
+  </script>
+
+
+  	<div id="wrapper">
+  		<!-- start header -->
+  		<header>
+  			<section class="callaction">
+  				<div class="container">
+  					<div class="row">
+					
+  						<div class="col-lg-12">
+						
+							<div class="acc-options">
+								<div class="big-cta">
+									<div class="cta-text">
+			
+						  <a title="Skip to Content" href="<?=($cur_url=="/index.php"?"featured":"#content")?>" tabindex="1">skip to content</a> |
+		<a href="?lang=en">EN</a> |
+
+		<a href="?lang=zh">繁體</a>
+
+										<ul id="textsize1" class="textresizer">
+											<li><a href="#nogo" class="s0" title="Text Size: Default">A</a></li>
+											<li><a href="#nogo" class="s1" title="Text Size: Larger">A</a></li>
+											<li><a href="#nogo" class="s2" title="Text Size: Largest">A</a></li>
+										</ul> |
+						  
+						  <div class="fb-like" data-href="https://www.facebook.com/tecktaiginsengco/" data-layout="button" 
+						  data-action="like" data-show-faces="false" data-share="true"></div>
+							
+
+							</div>
+							</div>		
+
+							
+							</div>
+							
+  							<div class="big-cta">
+		
+  							</div>
+							
+							
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+  			<div class="navbar navbar-default navbar-static-top">
+  				<div class="container">
+
+  					<div class="navbar-header">
+  						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  						</button>
+  					</div>
+  					<div class="navbar-collapse collapse ">
+  						<ul class="nav navbar-nav">
+  							<li <?=($_SESSION['nav_active'] == 'home' ? ' class="active"' : '')?>><a href="index.html">Home</a></li>
+  														<li <?=($_SESSION['nav_active'] == 'contact_us' ? ' class="active"' : '')?>><a href="about.html">About Me</a></li>
+  						</ul>
+  					</div>
+  					</div>
+  				</div>
+  			</div>
+  		</header>
+		
+		<section class="container">
+		<h1>Home</h1>
+		<p>Name: Cheung Ka Hung</p><br/>
+		<p>Email: <a href="mail to:chaunceycheung@yahoo.com.hk">chaunceycheung@yahoo.com.hk</a>
+		Education</p>
+		<ol><li>Hong Kong Industrial Vocational Education</li>
+		<li>Software Engineering in Higher Diploma</li>
+		<li>Foundation Diploma - Computing</li>
+		</ol>
+	</section>
+	</body>
+</html>
